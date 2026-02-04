@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+/* Reset */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+/* Variáveis */
+    :root {
+        --azul-claro: #66bbff;
+        --azul-escuro: #0077ff;
+        --branco: #ffffff;
+        --cinza-claro: #eeeeee;
+        --cinza-escuro: #222222;
+        --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+/* Versão desktop */
+
+    body {
+        background-color: var(--cinza-claro);
+        color: var(--cinza-escuro);
+        font-family: var(--fonte-padrao);
+        line-height: 1.5em;
+    }
+
+    header {
+        align-content: center;
+        background-color: var(--azul-escuro);
+        color: var(--cinza-escuro);
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+
+    #nav-bar ul {
+        display: flex;
+        gap: 5px;
+        list-style: none;
+    }
+
+    #nav-bar a {
+        border-radius: 5px;
+        color: var(--branco);
+        font-weight: 600;
+        padding: 12px 15px;
+        text-decoration: none;  
+        transition: ease, background-color 0.4s, color 0.4s;
+    }
+
+    #nav-bar a:hover {
+        background-color: var(--azul-claro);
+        color: var(--azul-escuro);
+        transition: ease, background-color 0.4s, color 0.4s;
+    }
+
+    main {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: auto 90vw auto;
+        margin-top: 20px;
+    }
+
+    section#ficheiro {
+        background-color: var(--branco);
+        border-radius: 8px;
+        font-size: 0.8em;
+        grid-column: 2;
+        padding: 20px;
+    }
+
+    section#ficheiro img.foto-perfil {
+        aspect-ratio: 1/1;
+        border: 5px solid var(--branco);
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+        object-fit: cover;
+        outline: 7px solid var(--azul-escuro);
+        overflow: hidden;
+        width: 200px;
+    }
+
+    section#ficheiro h1 {
+        color: var(--azul-escuro);
+        font-size: 2.5em;
+        margin: 15px 0px;
+        text-align: left;
+    }
+
+    div#redes-sociais {
+        align-items: center;    
+        display: flex;
+        font-size: 2.0em;
+        gap: 40px;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    div#redes-sociais a {
+        background-color: var(--azul-claro);
+        border-radius: 25%;
+        color: var(--azul-escuro);
+        padding: 7px;
+        transition: ease 0.4s;
+    }
+
+    div#redes-sociais a:hover {
+        background-color: var(--azul-escuro);
+        color: var(--azul-claro);
+        transition: ease 0.4s;
+    }
+
+    section#detalhamento {
+        grid-column: 2;
+    }
+
+    article {
+        background-color: var(--branco);
+        border-radius: 8px;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    h2 {
+        color: var(--azul-escuro);
+        margin-bottom: 30px;
+    }
+
+    #container-projetos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        #container-projetos .info {
+            max-width: 80%;
+        }
+    }
+
+    #container-projetos p {
+        font-size: 0.8em;
+    }
+
+    h3 {
+        font-size: 0.9em;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        transition: ease 0.3s;
+    }
+
+    h3:hover {
+        color: var(--azul-claro);
+        transition: ease 0.3s;
+    }
+
+    #container-projetos a {
+        color: var(--cinza-escuro);
+        text-decoration: none;
+        transition: ease 0.5s;
+    }
+
+    #container-projetos a:hover {
+        color: var(--azul-escuro);
+        transition: ease 0.5s;
+    }
+
+    #container-projetos .projeto {
+        background-color: var(--cinza-claro);
+        border-left: 5px solid var(--azul-claro);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+        transition: ease border-color 0.4s, border-width 0.4s;
+    }
+
+    @media screen and (min-width: 768px) {
+        #container-projetos .projeto {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+    }
+
+    #container-projetos .projeto:hover {
+        border-color: var(--azul-escuro);
+        border-left-width: 12px;
+        transition: ease border-color 0.4s, border-width 0.4s;
+    }
+
+    #container-projetos .imagem-projeto {
+        border-radius: 8px;
+        object-fit: cover;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+        #container-projetos .imagem-projeto {
+            max-height: 200px;
+            max-width: 20%;
+        }
+    }
+
+    #container-skills {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    @media screen and (min-width: 768px) {
+        #container-skills {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    #container-skills .info {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #container-skills .nome-skill {
+        color: var(--cinza-escuro);
+        font-weight: bold;
+    }
+
+    #container-skills .nivel-skill {
+        color: var(--azul-escuro);   
+        font-weight: bold;
+    }
+
+    #container-skills .barra {
+        background-color: var(--cinza-claro);
+        border-radius: 4px;
+        height: 8px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    #container-skills .progresso {
+        background-color: var(--azul-claro);
+        border-radius: 4px;
+        height: 100%;
+    }
+
+    footer {
+        background-color: var(--branco);
+        color: var(--cinza-escuro);
+        font-size: 0.8em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    footer a {
+        color: var(--cinza-escuro);
+        text-decoration: none;
+        transition: ease 0.5s;
+    }
+
+    footer a:hover {
+        color: var(--azul-escuro);
+        transition: ease 0.5s;
+    }
