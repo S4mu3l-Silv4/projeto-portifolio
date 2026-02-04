@@ -9,11 +9,11 @@
 
 /* Variáveis */
     :root {
-        --azul-claro: #66bbff;
-        --azul-escuro: #0077ff;
+        --azul-claro: #90DBF4;
+        --azul-escuro: #0000FF;
         --branco: #ffffff;
         --cinza-claro: #eeeeee;
-        --cinza-escuro: #222222;
+        --cinza-escuro: #0D1B2A;
         --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
     }
 
@@ -26,13 +26,18 @@
         line-height: 1.5em;
     }
 
-    header {
+    .nav-bar {
         align-content: center;
         background-color: var(--azul-escuro);
+        box-shadow: 0px 3px 3px var(--azul-escuro);
         color: var(--cinza-escuro);
         display: flex;
         justify-content: flex-end;
         padding: 10px;
+        position: fixed;
+        transition: ease 0.3s;
+        width: 100%;
+        z-index: 1;
     }
 
     #nav-bar ul {
@@ -77,7 +82,7 @@
         border-radius: 50%;
         display: block;
         margin: auto;
-        margin-bottom: 15px;
+        margin-bottom: 80px;
         object-fit: cover;
         outline: 7px solid var(--azul-escuro);
         overflow: hidden;
