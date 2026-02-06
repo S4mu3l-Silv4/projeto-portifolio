@@ -143,11 +143,13 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        transition: ease 0.3s;
     }
 
     @media screen and (min-width: 768px) {
         #container-projetos .info {
             max-width: 80%;
+            transition: ease 0.3s;
         }
     }
 
@@ -207,12 +209,14 @@
         object-fit: cover;
         overflow: hidden;
         width: 100%;
+        transition: ease 0.3s;
     }
 
     @media screen and (min-width: 768px) {
         #container-projetos .imagem-projeto {
             max-height: 200px;
             max-width: 20%;
+            transition: ease 0.3s;
         }
     }
 
@@ -220,11 +224,13 @@
         display: grid;
         gap: 30px;
         grid-template-columns: 1fr;
+        transition: ease 0.3s;
     }
 
     @media screen and (min-width: 768px) {
         #container-skills {
             grid-template-columns: 1fr 1fr;
+            transition: ease 0.3s;
         }
     }
 
