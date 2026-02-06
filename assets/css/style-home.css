@@ -96,6 +96,10 @@
         text-align: left;
     }
 
+    h1, h2 {
+        text-shadow: 1px 1px 3px var(--cinza-escuro);
+    }
+
     div#redes-sociais {
         align-items: center;    
         display: flex;
