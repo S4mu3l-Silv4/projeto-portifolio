@@ -84,9 +84,16 @@
         margin: auto;
         margin-bottom: 80px;
         object-fit: cover;
+        opacity: 0.9;
         outline: 7px solid var(--azul-escuro);
         overflow: hidden;
+        transition: ease 0.4s;
         width: 200px;
+    }
+
+    section#ficheiro img.foto-perfil:hover {
+        opacity: 1.0;
+        transition: ease 0.4s;
     }
 
     section#ficheiro h1 {
@@ -207,6 +214,7 @@
     #container-projetos .imagem-projeto {
         border-radius: 8px;
         object-fit: cover;
+        opacity: 0.4;
         overflow: hidden;
         width: 100%;
         transition: ease 0.3s;
@@ -218,6 +226,11 @@
             max-width: 20%;
             transition: ease 0.3s;
         }
+    }
+
+    #container-projetos .imagem-projeto:hover {
+        opacity: 1.0;
+        transition: ease 0.3s;
     }
 
     #container-skills {
@@ -245,6 +258,10 @@
         font-weight: bold;
     }
 
+    #container-skills .nome-skill:hover {
+        color: var(--azul-claro);
+    }
+
     #container-skills .nivel-skill {
         color: var(--azul-escuro);   
         font-weight: bold;
@@ -260,8 +277,15 @@
 
     #container-skills .progresso {
         background-color: var(--azul-claro);
+        border: 1px solid var(--cinza-escuro);
         border-radius: 4px;
         height: 100%;
+        transition: ease 0.2s;
+    }
+
+    #container-skills .progresso:hover {
+        border: 0px;
+        transition: ease 0.2s;
     }
 
     footer {
