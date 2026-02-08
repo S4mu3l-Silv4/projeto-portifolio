@@ -4,12 +4,12 @@
   const navBar = document.getElementById("nav-bar")
 
   window.addEventListener("scroll", function () {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop
 
       if (scrollTop > ultimoScrollTop) {
-          navBar.style.top = "-40px"
+        navBar.style.top = "-40px"
       } else {
-          navBar.style.top = "0"
+        navBar.style.top = "0"
       }
 
       ultimoScrollTop = scrollTop <= 0 ? 0 : scrollTop
