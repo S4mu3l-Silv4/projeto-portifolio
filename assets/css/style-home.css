@@ -21,7 +21,6 @@
 
     body {
         background-color: var(--cinza-claro);
-        color: var(--cinza-escuro);
         font-family: var(--fonte-padrao);
         line-height: 1.5em;
     }
@@ -70,6 +69,7 @@
 
     section#ficheiro {
         background-color: var(--branco);
+        border: solid 1px var(--azul-claro);
         border-radius: 8px;
         font-size: 0.8em;
         grid-column: 2;
@@ -88,7 +88,7 @@
         outline: 7px solid var(--azul-escuro);
         overflow: hidden;
         transition: ease 0.4s;
-        width: 200px;
+        width: 250px;
     }
 
     section#ficheiro img.foto-perfil:hover {
@@ -110,7 +110,7 @@
     div#secao-redes-sociais {
         align-items: center;    
         display: flex;
-        font-size: 3.0em;
+        font-size: 2.5em;
         gap: 40px;
         justify-content: center;
         margin-top: 80px;
@@ -136,6 +136,7 @@
 
     article {
         background-color: var(--branco);
+        border: solid 1px var(--azul-claro);
         border-radius: 8px;
         margin-bottom: 20px;
         padding: 20px;

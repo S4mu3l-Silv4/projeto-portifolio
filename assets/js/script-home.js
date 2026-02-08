@@ -12,7 +12,7 @@
         navBar.style.top = "0"
       }
 
-      ultimoScrollTop = scrollTop <= 0 ? 0 : scrollTop
+    ultimoScrollTop = scrollTop <= 0 ? 0 : scrollTop
   })
 
 // Associação entre links da nav bar e seções:
