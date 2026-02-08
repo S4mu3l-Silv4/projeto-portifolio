@@ -107,16 +107,16 @@
         text-shadow: 1px 1px 3px var(--cinza-escuro);
     }
 
-    div#redes-sociais {
+    div#secao-redes-sociais {
         align-items: center;    
         display: flex;
         font-size: 2.0em;
         gap: 40px;
         justify-content: center;
-        margin-top: 15px;
+        margin-top: 80px;
     }
 
-    div#redes-sociais a {
+    div#secao-redes-sociais a {
         background-color: var(--azul-claro);
         border-radius: 25%;
         color: var(--azul-escuro);
@@ -124,7 +124,7 @@
         transition: ease 0.4s;
     }
 
-    div#redes-sociais a:hover {
+    div#secao-redes-sociais a:hover {
         background-color: var(--azul-escuro);
         color: var(--azul-claro);
         transition: ease 0.4s;
