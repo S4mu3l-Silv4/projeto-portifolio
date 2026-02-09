@@ -17,7 +17,7 @@
 
 // Associação entre links da nav bar e seções:
 
-  const navLinks = document.querySelectorAll('#nav-bar ul a.link');
+  const navLinks = document.querySelectorAll('a.link');
   navLinks.forEach(link => {
     link.addEventListener('click', function(e) {
       e.preventDefault();
