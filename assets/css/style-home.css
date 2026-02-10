@@ -64,7 +64,7 @@
         display: grid;
         gap: 20px;
         grid-template-columns: auto 90vw auto;
-        margin-top: 20px;
+        margin-top: 120px;
     }
 
     section#ficheiro {
@@ -73,6 +73,7 @@
         border-radius: 8px;
         font-size: 0.8em;
         grid-column: 2;
+        margin-bottom: 60px;
         padding: 20px;
     }
 
@@ -139,7 +140,7 @@
         background-color: var(--branco);
         border: solid 1px var(--azul-claro);
         border-radius: 8px;
-        margin-bottom: 60px;
+        margin-bottom: 90px;
         padding: 20px;
     }
 
