@@ -17,18 +17,56 @@
 
 // Associação entre links da nav bar e seções:
 
-  const navLinks = document.querySelectorAll('a.link');
+  const navLinks = document.querySelectorAll('a.link')
   navLinks.forEach(link => {
     link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
+      e.preventDefault()
+      const target = document.querySelector(this.getAttribute('href'))
       if (target) {
         const headerHeight = document.querySelector('.nav-bar').offsetHeight;
-        const targetPosition = target.offsetTop - headerHeight - 20;
+        const targetPosition = target.offsetTop - headerHeight - 15;
         window.scrollTo({
           top: targetPosition,
           behavior: 'smooth'
-        });
+        })
       }
-    });
-  });
+    })
+  })
+
+// Animação das barras e porcentagens nas skills
+
+  const section = document.querySelector("#skills-section")
+  const skills = document.querySelectorAll(".skill")
+
+  let animated = false
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !animated) {
+        animateSkills()
+        animated = true
+      }
+    })
+  }, { threshold: 0.4 })
+
+  observer.observe(section)
+
+  function animateSkills() {
+    skills.forEach(skill => {
+      const percent = skill.getAttribute("data-percent")
+      const bar = skill.querySelector(".bar")
+      const percentText = skill.querySelector(".percent")
+
+      bar.style.width = percent + "%"
+
+      let current = 0
+      const interval = setInterval(() => {
+        if (current >= percent) {
+          clearInterval(interval)
+        } else {
+          current++;
+          percentText.textContent = current + "%"
+        }
+      }, 20)
+    })
+  }

@@ -217,7 +217,7 @@
     #container-projetos .imagem-projeto {
         border-radius: 8px;
         object-fit: cover;
-        opacity: 0.4;
+        opacity: 0.3;
         overflow: hidden;
         width: 100%;
         transition: ease 0.3s;
@@ -289,6 +289,22 @@
     #container-skills .progresso:hover {
         border: 0px;
         transition: ease 0.2s;
+    }
+
+    .bar-bg {
+        width: 100%;
+        height: 20px;
+        background: #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .bar {
+        height: 100%;
+        width: 0;
+        background: #4CAF50;
+        border-radius: 10px;
+        transition: width 2s ease;
     }
 
     footer {
