@@ -75,6 +75,7 @@
         grid-column: 2;
         margin-bottom: 60px;
         padding: 20px;
+        text-align: justify;
     }
 
     section#ficheiro img.foto-perfil {
@@ -198,6 +199,7 @@
         flex-direction: column;
         gap: 15px;
         padding: 10px;
+        text-align: justify;
         transition: ease border-color 0.4s, border-width 0.4s;
     }
 
@@ -259,10 +261,12 @@
     #container-skills .nome-skill {
         color: var(--cinza-escuro);
         font-weight: bold;
+        transition: ease 0.2s;
     }
 
     #container-skills .nome-skill:hover {
         color: var(--azul-claro);
+        transition: ease 0.2s;
     }
 
     #container-skills .nivel-skill {
@@ -319,10 +323,10 @@
     footer a {
         color: var(--cinza-escuro);
         text-decoration: none;
-        transition: ease 0.5s;
+        transition: ease 0.9s;
     }
 
     footer a:hover {
         color: var(--azul-escuro);
-        transition: ease 0.5s;
+        transition: ease 0.9s;
     }
