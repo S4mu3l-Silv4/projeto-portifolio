@@ -107,7 +107,7 @@
     }
 
     h1, h2 {
-        text-shadow: 1px 1px 3px var(--cinza-escuro);
+        text-shadow: 1px 1px 2px var(--cinza-escuro);
     }
 
     div#secao-redes-sociais {
