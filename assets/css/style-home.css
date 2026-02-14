@@ -258,57 +258,43 @@
         justify-content: space-between;
     }
 
-    #container-skills .nome-skill {
+    .label {
+        align-items: center;
         color: var(--cinza-escuro);
+        display: flex;
         font-weight: bold;
-        transition: ease 0.2s;
+        justify-content: space-between;
     }
 
-    #container-skills .nome-skill:hover {
+    .label:hover {
         color: var(--azul-claro);
         transition: ease 0.2s;
     }
 
-    #container-skills .nivel-skill {
-        color: var(--azul-escuro);   
-        font-weight: bold;
-    }
-
-    #container-skills .barra {
-        background-color: var(--cinza-claro);
-        border-radius: 4px;
-        height: 8px;
-        margin-bottom: 15px;
-        width: 100%;
-    }
-
-    #container-skills .progresso {
-        background-color: var(--azul-claro);
-        border: 1px solid var(--cinza-escuro);
-        border-radius: 4px;
-        height: 100%;
-        transition: ease 0.2s;
-    }
-
-    #container-skills .progresso:hover {
-        border: 0px;
-        transition: ease 0.2s;
+    .percent {
+        color: var(--azul-escuro);
     }
 
     .bar-bg {
-        width: 100%;
-        height: 20px;
-        background: #ddd;
+        background-color: var(--cinza-claro);
         border-radius: 10px;
+        height: 8px;
         overflow: hidden;
+        width: 100%;
     }
 
     .bar {
+        border: 1px solid var(--cinza-escuro);
         height: 100%;
         width: 0;
-        background: #4CAF50;
+        background-color: var(--azul-claro);
         border-radius: 10px;
         transition: width 2s ease;
+    }
+
+    .bar:hover {
+        border: 0px;
+        transition: ease 0.2s;
     }
 
     footer {
