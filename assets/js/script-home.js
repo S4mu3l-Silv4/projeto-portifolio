@@ -17,16 +17,16 @@
 
 // Associação entre links da nav bar e seções:
 
-  const navLinks = document.querySelectorAll('a.link')
-  navLinks.forEach(link => {
+  const linksNavBar = document.querySelectorAll('a.link')
+  linksNavBar.forEach(link => {
     link.addEventListener('click', function(e) {
       e.preventDefault()
-      const target = document.querySelector(this.getAttribute('href'))
-      if (target) {
-        const headerHeight = document.querySelector('.nav-bar').offsetHeight;
-        const targetPosition = target.offsetTop - headerHeight - 15;
+      const alvo = document.querySelector(this.getAttribute('href'))
+      if (alvo) {
+        const alturaHeader = document.querySelector('.nav-bar').offsetHeight;
+        const posicaoAlvo = alvo.offsetTop - alturaHeader - 15
         window.scrollTo({
-          top: targetPosition,
+          top: posicaoAlvo,
           behavior: 'smooth'
         })
       }
@@ -64,7 +64,7 @@
         if (current >= percent) {
           clearInterval(interval)
         } else {
-          current++;
+          current++
           percentText.textContent = current + "%"
         }
       }, 20)

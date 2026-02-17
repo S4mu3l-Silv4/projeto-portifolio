@@ -275,7 +275,7 @@
         color: var(--azul-escuro);
     }
 
-    .bar-bg {
+    .barra-interna {
         background-color: var(--cinza-claro);
         border-radius: 10px;
         height: 8px;
