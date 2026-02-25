@@ -33,6 +33,30 @@
     })
   })
 
+// Alternância entre temas claro e escuro:
+
+  const botao = document.getElementById('botao-tema')
+  const body = document.body
+
+  const temasalvo = localStorage.getItem('tema')
+  temaEscuro(temasalvo === 'tema-escuro')
+
+  function temaEscuro(tipo) {
+    if (tipo == true) {
+      body.classList.add('tema-escuro')
+      botao.innerHTML = '<i class="fa-solid fa-sun"></i>'
+    } else {
+      body.classList.remove('tema-escuro')
+      botao.innerHTML = '<i class="fa-solid fa-moon"></i>'
+    }
+  }
+
+  botao.addEventListener('click', () => {
+    const isescuro = body.classList.toggle('tema-escuro')
+    temaEscuro(isescuro)
+    localStorage.setItem('tema', isescuro ? 'tema-escuro' : 'tema-claro')
+  })
+
 // Animação das barras e porcentagens nas skills
 
   const section = document.querySelector(".skills-section")
