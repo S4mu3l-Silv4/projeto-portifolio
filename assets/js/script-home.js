@@ -91,6 +91,6 @@
           current++
           percentText.textContent = current + "%"
         }
-      }, 20)
+      }, 30)
     })
   }
