@@ -26,8 +26,8 @@
     }
 
     body.tema-escuro {
-        --azul-escuro: #3B82F6;
         --azul-claro: #97ddfc;
+        --azul-escuro: #3B82F6;
         --branco: #0F172A;
         --cinza-claro: #1E293B;
         --cinza-escuro: #E2E8F0;
@@ -116,7 +116,7 @@
     }
 
     h1, h2 {
-        text-shadow: 1px 1px 2px var(--cinza-escuro);
+        text-shadow: 0px 1px 2px var(--cinza-escuro);
     }
 
     p {
@@ -234,8 +234,8 @@
         object-fit: cover;
         opacity: 0.3;
         overflow: hidden;
-        width: 100%;
         transition: ease 0.3s;
+        width: 100%;
     }
 
     @media screen and (min-width: 768px) {
