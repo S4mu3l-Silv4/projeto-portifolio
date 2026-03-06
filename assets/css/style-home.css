@@ -230,7 +230,7 @@
     }
 
     #container-projetos .imagem-projeto {
-        border-radius: 8px;
+        border-radius: 4px;
         object-fit: cover;
         opacity: 0.3;
         overflow: hidden;
