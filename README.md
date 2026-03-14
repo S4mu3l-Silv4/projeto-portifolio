@@ -1,6 +1,6 @@
 # Projeto portifólio:
 
-  Este site foi desenvolvido individualmente por https://github.com/S4mu3l-Silv4 como um projeto pessoal, a partir do curso de HTML e CSS do Gustavo Guanabara, objetivando praticar e demonstrar as minhas habilidades em programação front-end.
+  Este projeto foi desenvolvido como um aprimoramento pessoal, objetivando praticar e demonstrar as minhas habilidades em HTML, CSS e JavaScript.
   <br>
   <br>
 ## Site no ar:

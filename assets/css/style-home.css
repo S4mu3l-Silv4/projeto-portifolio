@@ -309,23 +309,3 @@
         border: 0px;
         transition: ease 0.2s;
     }
-
-    footer {
-        background-color: var(--branco);
-        border: solid 1px var(--azul-claro);
-        color: var(--cinza-escuro);
-        font-size: 0.8em;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    footer a {
-        color: var(--cinza-escuro);
-        text-decoration: none;
-        transition: ease 0.9s;
-    }
-
-    footer a:hover {
-        color: var(--azul-escuro);
-        transition: ease 0.9s;
-    }
