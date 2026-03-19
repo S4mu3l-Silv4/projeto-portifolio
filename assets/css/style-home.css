@@ -97,16 +97,9 @@
         margin-bottom: 60px;
         margin-top: 30px;
         object-fit: cover;
-        opacity: 0.9;
         outline: 8px solid var(--azul-escuro);
         overflow: hidden;
-        transition: ease 0.4s;
         width: 250px;
-    }
-
-    section#ficheiro img.foto-perfil:hover {
-        opacity: 1.0;
-        transition: ease 0.4s;
     }
 
     section#ficheiro h1 {
@@ -125,14 +118,14 @@
     }
 
     .revelar {
-        opacity:0;
-        transform:translateY(60px);
-        transition:all 0.8s ease;
-        }
+        opacity: 0;
+        transform: translateY(60px);
+        transition: all 0.8s ease;
+    }
 
     .revelar.mostrar {
         opacity:1;
-        transform:translateY(0);
+        transform: translateY(0);
     }
 
     div#secao-redes-sociais {
