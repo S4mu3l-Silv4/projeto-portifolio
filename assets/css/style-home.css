@@ -8,6 +8,7 @@
     }
 
 /* Variáveis */
+
     :root {
         --azul-claro: #90DBF4;
         --azul-escuro: #0000FF;
@@ -121,6 +122,17 @@
 
     p {
         color: var(--cinza-escuro);
+    }
+
+    .revelar {
+        opacity:0;
+        transform:translateY(60px);
+        transition:all 0.8s ease;
+        }
+
+    .revelar.mostrar {
+        opacity:1;
+        transform:translateY(0);
     }
 
     div#secao-redes-sociais {
