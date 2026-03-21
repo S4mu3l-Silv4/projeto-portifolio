@@ -11,7 +11,7 @@
 
     :root {
         --azul-claro: #90DBF4;
-        --azul-escuro: #0000FF;
+        --azul-escuro: #0000be;
         --branco: #ffffff;
         --cinza-claro: #eeeeee;
         --cinza-escuro: #0D1B2A;
@@ -29,7 +29,7 @@
 
     body.tema-escuro {
         --azul-claro: #97ddfc;
-        --azul-escuro: #3B82F6;
+        --azul-escuro: #537ec4;
         --branco: #0F172A;
         --cinza-claro: #1E293B;
         --cinza-escuro: #E2E8F0;
