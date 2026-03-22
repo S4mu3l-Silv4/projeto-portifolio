@@ -8,7 +8,6 @@
     }
 
 /* Variáveis */
-
     :root {
         --azul-claro: #90DBF4;
         --azul-escuro: #0000be;
@@ -19,7 +18,6 @@
     }
 
 /* Versão desktop */
-
     body {
         background-color: var(--cinza-claro);
         font-family: var(--fonte-padrao);
@@ -107,6 +105,7 @@
         color: var(--azul-escuro);
         font-size: 2.5em;
         margin: 15px 0px;
+        margin-bottom: 40px;
         text-align: left;
     }
 
