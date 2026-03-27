@@ -22,7 +22,7 @@
         background-color: var(--cinza-claro);
         font-family: var(--fonte-padrao);
         line-height: 1.5em;
-        transition: ease 0.2s;
+        transition: ease 0.3s;
     }
 
     body.tema-escuro {
@@ -31,7 +31,7 @@
         --branco: #0F172A;
         --cinza-claro: #1E293B;
         --cinza-escuro: #E2E8F0;
-        transition: ease 0.2s;
+        transition: ease 0.3s;
     }
 
     .nav-bar {
