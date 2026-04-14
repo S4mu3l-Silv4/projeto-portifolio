@@ -218,7 +218,7 @@
         gap: 15px;
         padding: 10px;
         text-align: justify;
-        transition: ease border-color 0.4s, border-width 0.4s;
+        transition: ease border-color 0.4s, border-width 0.2s;
     }
 
     @media screen and (min-width: 768px) {
@@ -231,7 +231,7 @@
     #container-projetos .projeto:hover {
         border-color: var(--azul-escuro);
         border-left-width: 12px;
-        transition: ease border-color 0.4s, border-width 0.4s;
+        transition: ease border-color 0.4s, border-width 0.2s;
     }
 
     #container-projetos .imagem-projeto {
