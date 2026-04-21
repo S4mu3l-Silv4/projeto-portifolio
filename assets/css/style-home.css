@@ -99,14 +99,15 @@
         opacity: 0.9;
         outline: 8px solid var(--azul-escuro);
         overflow: hidden;
-        transition: ease 0.1s;
+        transition: ease 0.6s;
         width: 250px;
     }
 
     section#ficheiro img.foto-perfil:hover {
         opacity: 1.0;
+        outline: 2px solid var(--azul-escuro);
         transform: scale(1.1);
-        transition: ease 0.1s;
+        transition: ease 0.6s;
     }
 
     section#ficheiro h1 {
