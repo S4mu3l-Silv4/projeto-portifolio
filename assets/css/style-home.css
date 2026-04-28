@@ -125,6 +125,7 @@
 
     p {
         color: var(--cinza-escuro);
+        text-shadow: 1px 1px 1px var(--azul-claro);
     }
 
     .revelar {
