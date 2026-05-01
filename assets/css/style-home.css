@@ -85,6 +85,7 @@
         margin-bottom: 60px;
         padding: 20px;
         text-align: justify;
+        text-shadow: 1px 1px 1px var(--azul-claro);
     }
 
     section#ficheiro img.foto-perfil {
@@ -125,7 +126,6 @@
 
     p {
         color: var(--cinza-escuro);
-        text-shadow: 1px 1px 1px var(--azul-claro);
     }
 
     .revelar {
@@ -323,5 +323,4 @@
 
     .bar:hover {
         border: 0px;
-        transition: ease 0.2s;
     }

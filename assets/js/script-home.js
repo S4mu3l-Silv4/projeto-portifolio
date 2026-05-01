@@ -89,7 +89,7 @@
         animated = true
       }
     })
-  }, { threshold: 0.4 })
+  })
 
   obervador2.observe(section)
 
