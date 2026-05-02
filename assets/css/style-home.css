@@ -15,6 +15,7 @@
         --cinza-claro: #eeeeee;
         --cinza-escuro: #0D1B2A;
         --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+        --preto_transparente: #0000007a;
     }
 
 /* Versão desktop */
@@ -32,6 +33,8 @@
         --cinza-claro: #1E293B;
         --cinza-escuro: #E2E8F0;
         transition: ease 0.3s;
+        --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+        --preto_transparente: #0000007a;
     }
 
     .nav-bar {
@@ -85,7 +88,7 @@
         margin-bottom: 60px;
         padding: 20px;
         text-align: justify;
-        text-shadow: 1px 1px 1px var(--azul-claro);
+        text-shadow: 1px 1px 1px var(--);
     }
 
     section#ficheiro img.foto-perfil {
@@ -126,6 +129,7 @@
 
     p {
         color: var(--cinza-escuro);
+        text-shadow: 1px 1px 1px var(--preto_transparente);
     }
 
     .revelar {
@@ -198,6 +202,7 @@
     }
 
     h3 {
+        display: inline;
         font-size: 0.9em;
         padding-bottom: 15px;
         padding-top: 15px;
@@ -250,7 +255,7 @@
         object-fit: cover;
         opacity: 0.3;
         overflow: hidden;
-        transition: ease 0.3s;
+        transition: ease 1.6s;
         width: 100%;
     }
 
@@ -264,7 +269,7 @@
 
     #container-projetos .imagem-projeto:hover {
         opacity: 1.0;
-        transition: ease 0.3s;
+        transition: ease 1.6s;
     }
 
     #container-skills {
