@@ -15,7 +15,7 @@
         --cinza-claro: #eeeeee;
         --cinza-escuro: #0D1B2A;
         --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
-        --preto_transparente: #0000007a;
+        --preto_transparente: #00000050;
     }
 
 /* Versão desktop */
@@ -34,7 +34,7 @@
         --cinza-escuro: #E2E8F0;
         transition: ease 0.3s;
         --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
-        --preto_transparente: #0000007a;
+        --preto_transparente: #ffffff50;
     }
 
     .nav-bar {
@@ -129,7 +129,6 @@
 
     p {
         color: var(--cinza-escuro);
-        text-shadow: 1px 1px 1px var(--preto_transparente);
     }
 
     .revelar {
@@ -206,6 +205,7 @@
         font-size: 0.9em;
         padding-bottom: 15px;
         padding-top: 15px;
+        text-shadow: 1px 1px 1px var(--preto_transparente);
         transition: ease 0.3s;
     }
 
@@ -263,7 +263,6 @@
         #container-projetos .imagem-projeto {
             max-height: 200px;
             max-width: 20%;
-            transition: ease 0.3s;
         }
     }
 
