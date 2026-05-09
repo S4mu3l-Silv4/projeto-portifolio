@@ -130,22 +130,13 @@
         color: var(--cinza-escuro);
     }
 
-    #icone-redes-sociais {
-        color: var(--azul-escuro);
-        font-size: 2.5em;
-        margin-bottom: 20px;
-        margin-top: 50px;
-        position: relative;
-        text-align: center;
-        text-shadow: 0px 1px 2px var(--cinza-escuro);
-    }
-
     div#secao-redes-sociais {
-        align-items: center;    
+        align-items: center; 
         display: flex;
         font-size: 2.5em;
-        gap: 30px;
+        gap: 25px;
         justify-content: center;
+        margin-top: 50px;
     }
 
     div#secao-redes-sociais a {
