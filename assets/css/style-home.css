@@ -270,6 +270,12 @@
         transition: ease 1.6s;
     }
 
+    @media screen and (max-width: 768px) {
+        #secao-skills {
+            margin-bottom: -20px;
+        }
+    }
+
     #container-skills {
         display: grid;
         gap: 35px;
@@ -301,10 +307,6 @@
     .label:hover {
         color: var(--azul-claro);
         transition: ease 0.2s;
-    }
-
-    .percent {
-        color: var(--azul-escuro);
     }
 
     .barra-interna {
