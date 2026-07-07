@@ -270,9 +270,15 @@
         transition: ease 1.6s;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
         #secao-skills {
             margin-bottom: -10px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        #secao-skills {
+            margin-bottom: -14px;
         }
     }
 
