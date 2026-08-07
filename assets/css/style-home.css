@@ -18,7 +18,7 @@
         --preto_transparente: #00000050;
     }
 
-/* Versão desktop */
+/* Versão mobile */
     body {
         background-color: var(--cinza-claro);
         font-family: var(--fonte-padrao);
@@ -188,15 +188,15 @@
         transition: ease 0.3s;
     }
 
-/* Versão mobile */
-    @media screen and (min-width: 768px) {
+/* Versão desktop */
+    @media screen and (min-width: 769px) {
         #container-projetos .info {
             max-width: 80%;
             transition: ease 0.3s;
         }
     }
 
-/* Versão desktop */
+/* Versão mobile */
     #container-projetos p {
         font-size: 0.8em;
     }
@@ -238,15 +238,15 @@
         transition: ease border-color 0.4s, border-width 0.2s;
     }
 
-/* Versão mobile */
-    @media screen and (min-width: 768px) {
+/* Versão desktop */
+    @media screen and (min-width: 769px) {
         #container-projetos .projeto {
             flex-direction: row-reverse;
             justify-content: space-between;
         }
     }
 
-/* Versão desktop */
+/* Versão mobile */
     #container-projetos .projeto:hover {
         border-color: var(--azul-escuro);
         border-left-width: 12px;
@@ -262,34 +262,32 @@
         width: 100%;
     }
 
-/* Versão mobile */
-    @media screen and (min-width: 768px) {
+/* Versão desktop */
+    @media screen and (min-width: 769px) {
         #container-projetos .imagem-projeto {
             max-height: 200px;
             max-width: 20%;
         }
     }
 
-/* Versão desktop */
+/* Versão mobile */
     #container-projetos .imagem-projeto:hover {
         opacity: 1.0;
         transition: ease 1.6s;
     }
 
-/* Versão mobile */
-    @media screen and (min-width: 768px) {
+    #secao-skills {
+        margin-bottom: -14px;
+    }
+
+/* Versão desktop */
+    @media screen and (min-width: 769px) {
         #secao-skills {
             margin-bottom: -10px;
         }
     }
 
-    @media screen and (max-width: 768px) {
-        #secao-skills {
-            margin-bottom: -14px;
-        }
-    }
-
-/* Versão desktop */
+/* Versão mobile */
     #container-skills {
         display: grid;
         gap: 35px;
@@ -297,15 +295,15 @@
         transition: ease 0.3s;
     }
 
-/* Versão mobile */
-    @media screen and (min-width: 768px) {
+/* Versão desktop */
+    @media screen and (min-width: 769px) {
         #container-skills {
             grid-template-columns: 1fr 1fr;
             transition: ease 0.3s;
         }
     }
 
-/* Versão desktop */
+/* Versão mobile */
     #container-skills .info {
         align-items: center;
         display: flex;
