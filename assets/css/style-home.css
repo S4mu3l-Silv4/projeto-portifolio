@@ -343,3 +343,21 @@
     .bar:hover {
         border: 0px;
     }
+
+    .botao-download {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 14px 28px;
+        background-color: #2563eb;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .botao-download:hover {
+        background-color: #1d4ed8;
+        transform: translateY(-2px);
+    }

@@ -75,7 +75,7 @@
     obervador1.observe(el);
   })
 
-// Animação das barras e porcentagens nas skills
+// Animação das barras e porcentagens nas skills:
 
   const section = document.querySelector(".skills-section")
   const skills = document.querySelectorAll(".skill")
