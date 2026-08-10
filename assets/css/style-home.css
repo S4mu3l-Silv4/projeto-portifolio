@@ -345,19 +345,20 @@
     }
 
     .botao-download {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 14px 28px;
-        background-color: #2563eb;
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        font-size: 1rem;
+        background-color: var(--azul-escuro);
+        border-radius: 18px;
+        color: var(--azul-claro);
+        font-size: 1.1em;
         font-weight: bold;
-        transition: background-color 0.3s ease, transform 0.2s ease;
+        letter-spacing: 1px;
+        margin-bottom: 65px;
+        padding: 15px 25px;
+        text-decoration: none;
+        transition: background-color 0.4s ease, transform 0.1s ease;
     }
 
     .botao-download:hover {
-        background-color: #1d4ed8;
-        transform: translateY(-2px);
+        background-color: var(--azul-claro);
+        color: var(--azul-escuro);
+        transition: background-color 0.4s ease, transform 0.1s ease;
     }
