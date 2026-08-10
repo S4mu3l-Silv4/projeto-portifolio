@@ -362,6 +362,13 @@
         transition: background-color 0.4s ease, transform 0.1s ease;
     }
 
+/* Versão desktop */
+    @media screen and (min-width: 769px) {
+        .botao-download {
+            margin-bottom: 57px;
+        }
+    }
+
     .botao-download:hover {
         background-color: var(--azul-claro);
         color: var(--azul-escuro);
