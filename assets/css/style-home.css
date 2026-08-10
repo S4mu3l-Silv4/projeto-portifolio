@@ -344,10 +344,15 @@
         border: 0px;
     }
 
+    #secao-curriculo-pdf {
+        text-align: center;
+    }
+
     .botao-download {
         background-color: var(--azul-escuro);
         border-radius: 18px;
         color: var(--azul-claro);
+        display: inline-block;
         font-size: 1.1em;
         font-weight: bold;
         letter-spacing: 1px;
