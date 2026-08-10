@@ -356,7 +356,7 @@
         font-size: 1.1em;
         font-weight: bold;
         letter-spacing: 1px;
-        margin-bottom: 65px;
+        margin-bottom: 57px;
         padding: 15px 25px;
         text-decoration: none;
         transition: background-color 0.4s ease, transform 0.1s ease;
@@ -365,7 +365,7 @@
 /* Versão desktop */
     @media screen and (min-width: 769px) {
         .botao-download {
-            margin-bottom: 57px;
+            margin-bottom: 65px;
         }
     }
 
