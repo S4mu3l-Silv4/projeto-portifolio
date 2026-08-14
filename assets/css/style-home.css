@@ -283,7 +283,7 @@
 /* Versão desktop */
     @media screen and (min-width: 769px) {
         #secao-skills {
-            margin-bottom: -10px;
+            margin-bottom: 10px;
         }
     }
 
@@ -345,6 +345,11 @@
     }
 
     #secao-curriculo-pdf {
+        background-color: var(--branco);
+        border: solid 1px var(--azul-claro);
+        border-radius: 8px;
+        margin-bottom: 75px;
+        padding: 45px;
         text-align: center;
     }
 
@@ -356,23 +361,13 @@
         font-size: 1.1em;
         font-weight: bold;
         letter-spacing: 1px;
-        margin-bottom: 57px;
-        margin-top: 3px;
         padding: 15px 25px;
         text-decoration: none;
-        transition: background-color 0.4s ease, transform 0.1s ease;
-    }
-
-/* Versão desktop */
-    @media screen and (min-width: 769px) {
-        .botao-download {
-            margin-bottom: 65px;
-            margin-top: 0px;
-        }
+        transition: background-color 0.8s ease, transform 0.8s ease;
     }
 
     .botao-download:hover {
         background-color: var(--azul-claro);
         color: var(--azul-escuro);
-        transition: background-color 0.4s ease, transform 0.1s ease;
+        transition: background-color 0.8s ease, transform 0.8s ease;
     }
