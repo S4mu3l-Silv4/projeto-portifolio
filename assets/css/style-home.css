@@ -367,12 +367,23 @@
         display: inline-block;
         font-size: 1.1em;
         font-weight: bold;
+        left: 30%;
         letter-spacing: 1px;
         padding: 15px 25px;
+        position: relative;
         text-decoration: none;
         transition: background-color 0.8s ease, transform 0.8s ease;
     }
 
+/* Versão desktop */
+    @media screen and (min-width: 769px) {
+        .botao-download {
+            left: 40%;
+            position: relative;
+        }
+    }
+
+/* Versão desktop */
     .botao-download:hover {
         background-color: var(--azul-claro);
         border: solid 2px var(--azul-escuro);
