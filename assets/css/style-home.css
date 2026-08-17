@@ -364,26 +364,17 @@
         border: solid 2px var(--azul-claro);
         border-radius: 18px;
         color: var(--azul-claro);
-        display: inline-block;
+        display: table;
         font-size: 1.1em;
         font-weight: bold;
-        left: 30%;
         letter-spacing: 1px;
+        margin: 20px auto 0px;
         padding: 15px 25px;
-        position: relative;
+        text-align: center;
         text-decoration: none;
         transition: background-color 0.8s ease, transform 0.8s ease;
     }
 
-/* Versão desktop */
-    @media screen and (min-width: 769px) {
-        .botao-download {
-            left: 40%;
-            position: relative;
-        }
-    }
-
-/* Versão desktop */
     .botao-download:hover {
         background-color: var(--azul-claro);
         border: solid 2px var(--azul-escuro);
