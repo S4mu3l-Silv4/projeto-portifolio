@@ -344,17 +344,24 @@
         border: 0px;
     }
 
-    #secao-curriculo-pdf {
+    #secao-curriculo {
         background-color: var(--branco);
         border: solid 1px var(--azul-claro);
         border-radius: 8px;
         margin-bottom: 75px;
-        padding: 45px;
+        padding: 20px;
+    }
+
+    #secao-curriculo p {
+        font-size: 0.8em;
+        margin-bottom: 5px;
+        margin-top: -7px;
         text-align: center;
     }
 
     .botao-download {
         background-color: var(--azul-escuro);
+        border: solid 2px var(--azul-claro);
         border-radius: 18px;
         color: var(--azul-claro);
         display: inline-block;
@@ -368,6 +375,7 @@
 
     .botao-download:hover {
         background-color: var(--azul-claro);
+        border: solid 2px var(--azul-escuro);
         color: var(--azul-escuro);
         transition: background-color 0.8s ease, transform 0.8s ease;
     }

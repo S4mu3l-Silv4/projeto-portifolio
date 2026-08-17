@@ -72,7 +72,7 @@
   })
 
   elementos.forEach(el=>{
-    obervador1.observe(el);
+    obervador1.observe(el)
   })
 
 // Animação das barras e porcentagens nas skills:
