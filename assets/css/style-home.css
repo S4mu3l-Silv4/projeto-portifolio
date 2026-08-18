@@ -348,14 +348,21 @@
         background-color: var(--branco);
         border: solid 1px var(--azul-claro);
         border-radius: 8px;
-        margin-bottom: 75px;
+        margin-bottom: 65px;
         padding: 20px;
     }
 
+/* Versão desktop */
+    @media screen and (min-width: 769px) {
+        #secao-curriculo {
+            margin-bottom: 75px;
+        }
+    }
+
+/* Versão mobile */
     #secao-curriculo p {
         font-size: 0.8em;
-        margin-bottom: 5px;
-        margin-top: -7px;
+        margin-bottom: -10px;
         text-align: center;
     }
 
