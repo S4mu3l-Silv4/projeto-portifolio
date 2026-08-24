@@ -51,6 +51,14 @@
         z-index: 1;
     }
 
+/* Versão desktop */
+    @media screen and (min-width: 769px) {
+        .nav-bar {
+            padding-right: 110px;
+        }
+    }
+
+/* Versão mobile */
     #nav-bar ul {
         display: flex;
         gap: 3px;
