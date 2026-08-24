@@ -376,7 +376,7 @@
 
     .botao-download {
         background-color: var(--azul-escuro);
-        border: solid 2px var(--azul-claro);
+        border: solid 1px var(--azul-claro);
         border-radius: 18px;
         color: var(--azul-claro);
         display: table;
