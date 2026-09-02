@@ -43,7 +43,7 @@
         box-shadow: 0px 3px 3px var(--azul-escuro); 
         color: var(--cinza-escuro);
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         padding: 10px;
         position: fixed;
         transition: ease 0.3s;
@@ -54,6 +54,8 @@
 /* Versão desktop */
     @media screen and (min-width: 769px) {
         .nav-bar {
+            display: flex;
+            justify-content: flex-end;
             padding-right: 110px;
         }
     }
