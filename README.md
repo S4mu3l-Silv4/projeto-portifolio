@@ -1,4 +1,4 @@
-# Projeto portifólio:
+g# Projeto portifólio:
 
   Este projeto foi desenvolvido como um aprimoramento pessoal, objetivando praticar e demonstrar as minhas habilidades em front-end.
   <br>
