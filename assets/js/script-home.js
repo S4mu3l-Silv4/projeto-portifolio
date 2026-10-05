@@ -65,12 +65,12 @@
     ? 0.1
     : 0.01
 
-  const observador1 = new IntersectionObserver((entries) => {
+  const observador1 = new IntersectionObserver((entradas) => {
 
-    entries.forEach(entry => {
+    entradas.forEach(entrada => {
 
-      if (entry.isIntersecting) {
-        entry.target.classList.add("mostrar")
+      if (entrada.isIntersecting) {
+        entrada.target.classList.add("mostrar")
       }
 
     })
