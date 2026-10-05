@@ -61,18 +61,26 @@
 
   const elementos = document.querySelectorAll(".revelar")
 
-  const obervador1 = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-        if(entry.isIntersecting){
-          entry.target.classList.add("mostrar")
-        }
+  const threshold = window.matchMedia("(min-width: 769px)").matches
+    ? 0.1
+    : 0.05
+
+  const observador1 = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+      if (entry.isIntersecting) {
+        entry.target.classList.add("mostrar")
+      }
+
     })
-  },{
-      threshold:0.1
+
+  }, {
+    threshold: threshold
   })
 
-  elementos.forEach(el=>{
-    obervador1.observe(el)
+  elementos.forEach(el => {
+    observador1.observe(el)
   })
 
 // Animação das barras e porcentagens nas skills:
