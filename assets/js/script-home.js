@@ -63,7 +63,7 @@
 
   const threshold = window.matchMedia("(min-width: 769px)").matches
     ? 0.1
-    : 0.05
+    : 0.01
 
   const observador1 = new IntersectionObserver((entries) => {
 
