@@ -83,6 +83,68 @@
     observador1.observe(el)
   })
 
+// Filtragem e limpeza nos projetos:
+
+  const filtrosProjetos = document.getElementById('filtros-projetos')
+  const projetos = document.querySelectorAll('#container-projetos .projeto')
+  const limparFiltros = document.getElementById('limpar-filtros')
+
+  function obterValoresSelecionados(nome) {
+    return Array.from(document.querySelectorAll(`input[name="${nome}"]:checked`))
+      .map(input => input.value)
+  }
+
+  function atualizarProjetos() {
+    const tiposSelecionados = obterValoresSelecionados('tipo-projeto')
+    const linguagensSelecionadas = obterValoresSelecionados('linguagem-projeto')
+    const anosSelecionados = obterValoresSelecionados('ano-projeto')
+    let projetosVisiveis = 0
+
+    projetos.forEach(projeto => {
+      const tipo = projeto.dataset.tipo
+      const linguagens = projeto.dataset.linguagens.split(',')
+      const ano = projeto.dataset.ano
+
+      const correspondeTipo = tiposSelecionados.length === 0 || tiposSelecionados.includes(tipo)
+      const correspondeLinguagem = linguagensSelecionadas.length === 0 ||
+        linguagensSelecionadas.some(linguagem => linguagens.includes(linguagem))
+      const correspondeAno = anosSelecionados.length === 0 || anosSelecionados.includes(ano)
+
+      const deveExibir = correspondeTipo && correspondeLinguagem && correspondeAno
+      projeto.classList.toggle('filtro-oculto', !deveExibir)
+
+      if (deveExibir) {
+        projetosVisiveis++
+      }
+    })
+  }
+
+  if (filtrosProjetos) {
+    filtrosProjetos.addEventListener('change', atualizarProjetos)
+
+    document.addEventListener('click', evento => {
+      if (!evento.target.closest('#filtros-projetos .filtro-projeto')) {
+        filtrosProjetos.querySelectorAll('.filtro-projeto[open]').forEach(filtro => {
+          filtro.open = false
+        })
+      }
+    })
+  }
+
+  if (limparFiltros) {
+    limparFiltros.addEventListener('click', () => {
+      filtrosProjetos.querySelectorAll('input[type="checkbox"]').forEach(input => {
+        input.checked = false
+      })
+
+      filtrosProjetos.querySelectorAll('details').forEach(filtro => {
+        filtro.open = false
+      })
+
+      atualizarProjetos()
+    })
+  }
+
 // Animação das barras e porcentagens nas skills:
 
   const section = document.querySelector(".skills-section")

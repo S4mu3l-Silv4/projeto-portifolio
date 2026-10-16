@@ -80,8 +80,68 @@
                     <h2>
                         <i class="fa-solid fa-lightbulb"></i> Projetos
                     </h2>
+                    <div id="filtros-projetos" aria-label="Filtros dos projetos">
+                        <details class="filtro-projeto">
+                            <summary>
+                                Tipo de projeto
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </summary>
+                            <div class="opcoes-filtro">
+                                <label>
+                                    <input type="checkbox" name="tipo-projeto" value="Front-End">Front-End
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="tipo-projeto" value="Back-End">Back-End
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="tipo-projeto" value="Full-Stack">Full-Stack
+                                </label>
+                            </div>
+                        </details>
+                        <details class="filtro-projeto">
+                            <summary>
+                                Linguagem<i class="fa-solid fa-chevron-down"></i>
+                            </summary>
+                            <div class="opcoes-filtro">
+                                <label>
+                                    <input type="checkbox" name="linguagem-projeto" value="HTML">HTML
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="linguagem-projeto" value="CSS">CSS
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="linguagem-projeto" value="JavaScript">JavaScript
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="linguagem-projeto" value="Python">Python
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="linguagem-projeto" value="VBA">VBA
+                                </label>
+                            </div>
+                        </details>
+                        <details class="filtro-projeto">
+                            <summary>
+                                Ano<i class="fa-solid fa-chevron-down"></i>
+                            </summary>
+                            <div class="opcoes-filtro">
+                                <label>
+                                    <input type="checkbox" name="ano-projeto" value="2026">2026
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="ano-projeto" value="2025">2025
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="ano-projeto" value="2024">2024
+                                </label>
+                            </div>
+                        </details>
+                        <button type="button" id="limpar-filtros">
+                            <i class="fa-solid fa-filter-circle-xmark"></i>Limpar filtro(s)
+                        </button>
+                    </div>
                     <div id="container-projetos">
-                        <div class="projeto">
+                        <div class="projeto" data-tipo="Front-End" data-linguagens="HTML,CSS,JavaScript" data-ano="2026">
                             <img src="./assets/imgs/print-projeto-portifolio.png" alt="Print do projeto portifólio" class="imagem-projeto">
                             <div class="info-projeto">
                                 <p class="periodo">
@@ -97,7 +157,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="projeto">
+                        <div class="projeto" data-tipo="Full-Stack" data-linguagens="Python,JavaScript" data-ano="2026">
                             <img src="" alt="Print do projeto Sistema de Controle" class="imagem-projeto">
                             <div class="info-projeto">
                                 <p class="periodo">
@@ -113,7 +173,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="projeto">
+                        <div class="projeto" data-tipo="Back-End" data-linguagens="VBA" data-ano="2026">
                             <img src="./assets/imgs/print-projeto-automacoes-vba.png" alt="Print do projeto automações com VBA" class="imagem-projeto">
                             <div class="info-projeto">
                                 <p class="periodo">
@@ -129,7 +189,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="projeto">
+                        <div class="projeto" data-tipo="Front-End" data-linguagens="HTML,CSS,JavaScript" data-ano="2024">
                             <img src="./assets/imgs/print-projeto-hollow-knight.png" alt="Print do projeto Hollow Knight - Silksong" class="imagem-projeto">
                             <div class="info-projeto">
                                 <p class="periodo">
@@ -145,7 +205,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="projeto">
+                        <div class="projeto" data-tipo="Front-End" data-linguagens="HTML,CSS" data-ano="2024">
                             <img src="./assets/imgs/print-projeto-redes-sociais.png" alt="Print do projeto redes sociais" class="imagem-projeto">
                             <div class="info-projeto">
                                 <p class="periodo">
@@ -161,7 +221,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="projeto">
+                        <div class="projeto" data-tipo="Back-End" data-linguagens="Python" data-ano="2025">
                             <img src="./assets/imgs/print-projeto-web-scrapping.png" alt="Print do projeto web scraping" class="imagem-projeto" alt="" class="imagem-projeto">
                             <div class="info-projeto">
                                 <p class="periodo">
@@ -177,7 +237,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="projeto">
+                        <div class="projeto" data-tipo="Front-End" data-linguagens="HTML,CSS,JavaScript" data-ano="2024">
                             <img src="./assets/imgs/print-projeto-mascote-android.png" alt="Print do projeto mascote Android" class="imagem-projeto">
                             <div class="info-projeto">
                                 <p class="periodo">
@@ -193,7 +253,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="projeto">
+                        <div class="projeto" data-tipo="Front-End" data-linguagens="HTML,CSS,JavaScript" data-ano="2024">
                             <img src="./assets/imgs/print-projeto-cordel-moderno.png" alt="Print do projeto Cordel Moderno" class="imagem-projeto">
                             <div class="info-projeto">
                                 <p class="periodo">
