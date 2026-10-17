@@ -32,9 +32,9 @@
         --branco: #0F172A;
         --cinza-claro: #1E293B;
         --cinza-escuro: #E2E8F0;
-        transition: ease 0.3s;
         --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
         --preto_transparente: #ffffff50;
+        transition: ease 0.3s;
     }
 
     .nav-bar {
@@ -100,6 +100,18 @@
         padding: 20px;
     }
 
+    h1, h2 {
+        text-shadow: 0px 1px 2px var(--cinza-escuro);
+    }
+
+    section#ficheiro h1 {
+        color: var(--azul-escuro);
+        font-size: 2.5em;
+        margin: 15px 0px;
+        margin-bottom: 50px;
+        text-align: left;
+    }
+
     section#ficheiro img.foto-perfil {
         aspect-ratio: 1/1;
         border: 5px solid var(--branco);
@@ -122,18 +134,6 @@
         outline: 2px solid var(--azul-escuro);
         transform: scale(1.1);
         transition: ease 0.6s;
-    }
-
-    section#ficheiro h1 {
-        color: var(--azul-escuro);
-        font-size: 2.5em;
-        margin: 15px 0px;
-        margin-bottom: 50px;
-        text-align: left;
-    }
-
-    h1, h2 {
-        text-shadow: 0px 1px 2px var(--cinza-escuro);
     }
 
     p {
@@ -163,6 +163,10 @@
         transition: ease 0.6s;
     }
 
+    section#detalhamento {
+        grid-column: 2;
+    }
+
     .revelar {
         opacity: 0;
         transform: translateY(60px);
@@ -172,10 +176,6 @@
     .revelar.mostrar {
         opacity: 1;
         transform: translateY(0);
-    }
-
-    section#detalhamento {
-        grid-column: 2;
     }
 
     article {
@@ -191,21 +191,6 @@
         margin-bottom: 40px;
     }
 
-    @media screen and (max-width: 768px) {
-        #filtros-projetos {
-            flex-wrap: wrap;
-        }
-
-        .filtro-projeto {
-            flex: 1 1 calc(50% - 5px);
-            min-width: 0;
-        }
-
-        #limpar-filtros {
-            flex: 1 1 100%;
-        }
-    }
-
     #filtros-projetos {
         align-items: flex-start;
         display: flex;
@@ -215,6 +200,12 @@
         z-index: 2;
     }
 
+    @media screen and (max-width: 768px) {
+        #filtros-projetos {
+            flex-wrap: wrap;
+        }
+    }
+
     .filtro-projeto {
         background-color: var(--cinza-claro);
         border: 1px solid var(--azul-claro);
@@ -222,6 +213,13 @@
         color: var(--cinza-escuro);
         min-width: 150px;
         position: relative;
+    }
+
+    @media screen and (max-width: 768px) {
+        .filtro-projeto {
+            flex: 1 1 calc(50% - 5px);
+            min-width: 0;
+        }
     }
 
     .filtro-projeto summary {
@@ -325,17 +323,15 @@
         transition: ease 0.3s;
     }
 
+    @media screen and (max-width: 768px) {
+        #limpar-filtros {
+            flex: 1 1 100%;
+        }
+    }
+
     #limpar-filtros:hover {
         background-color: var(--azul-claro);
         color: var(--azul-escuro);
-    }
-
-    #mensagem-filtros {
-        color: var(--cinza-escuro);
-        display: none;
-        font-size: 0.85em;
-        margin: -5px 0 20px;
-        text-align: center;
     }
 
     #container-projetos .projeto.filtro-oculto {
@@ -358,35 +354,6 @@
     }
 
 /* Versão mobile */
-    #container-projetos p {
-        font-size: 0.8em;
-    }
-
-    h3 {
-        display: inline;
-        font-size: 0.9em;
-        padding-bottom: 15px;
-        padding-top: 15px;
-        text-shadow: 1px 1px 1px var(--preto_transparente);
-        transition: ease 0.3s;
-    }
-
-    h3:hover {
-        color: var(--azul-claro);
-        transition: ease 0.3s;
-    }
-
-    #container-projetos a {
-        color: var(--cinza-escuro);
-        text-decoration: none;
-        transition: ease 0.5s;
-    }
-
-    #container-projetos a:hover {
-        color: var(--azul-escuro);
-        transition: ease 0.5s;
-    }
-
     #container-projetos .projeto {
         background-color: var(--cinza-claro);
         border-left: 5px solid var(--azul-claro);
@@ -435,6 +402,35 @@
     #container-projetos .imagem-projeto:hover {
         opacity: 1.0;
         transition: ease 1.6s;
+    }
+
+    #container-projetos p {
+        font-size: 0.8em;
+    }
+    
+    #container-projetos a {
+        color: var(--cinza-escuro);
+        text-decoration: none;
+        transition: ease 0.5s;
+    }
+
+    #container-projetos a:hover {
+        color: var(--azul-escuro);
+        transition: ease 0.5s;
+    }
+
+    h3 {
+        display: inline;
+        font-size: 0.9em;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        text-shadow: 1px 1px 1px var(--preto_transparente);
+        transition: ease 0.3s;
+    }
+
+    h3:hover {
+        color: var(--azul-claro);
+        transition: ease 0.3s;
     }
 
     #secao-skills {
