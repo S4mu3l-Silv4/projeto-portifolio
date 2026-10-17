@@ -255,20 +255,21 @@
         box-sizing: border-box;
         display: grid;
         gap: 8px 16px;
-        grid-auto-flow: column;
-        grid-template-columns: repeat(2, max-content);
+        grid-auto-flow: row;
+        grid-template-columns: repeat(3, max-content);
         padding: 10px;
         width: 100%;
     }
 
     .filtro-projeto:nth-of-type(1) .opcoes-filtro,
     .filtro-projeto:nth-of-type(3) .opcoes-filtro {
-        grid-auto-flow: row;
-        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(3, max-content);
+        grid-template-rows: auto;
     }
 
     .filtro-projeto:nth-of-type(2) .opcoes-filtro {
-        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(3, max-content);
+        grid-template-rows: repeat(2, auto);
     }
 
     .filtro-projeto[open] {
