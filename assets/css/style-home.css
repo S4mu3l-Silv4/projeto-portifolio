@@ -191,7 +191,6 @@
         margin-bottom: 40px;
     }
 
-/* Filtros dos projetos em telas menores */
     @media screen and (max-width: 768px) {
         #filtros-projetos {
             flex-wrap: wrap;
@@ -253,14 +252,25 @@
 
     .opcoes-filtro {
         background-color: var(--cinza-claro);
-        border-top: none;
         border-radius: 0 0 8px 8px;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
+        border-top: none;
         box-sizing: border-box;
-        width: 100%;
+        display: grid;
+        gap: 8px 16px;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(2, max-content);
         padding: 10px;
+        width: 100%;
+    }
+
+    .filtro-projeto:nth-of-type(1) .opcoes-filtro,
+    .filtro-projeto:nth-of-type(3) .opcoes-filtro {
+        grid-auto-flow: row;
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .filtro-projeto:nth-of-type(2) .opcoes-filtro {
+        grid-template-rows: repeat(3, auto);
     }
 
     .filtro-projeto[open] {
@@ -277,9 +287,8 @@
     }
 
     .opcoes-filtro input[type="checkbox"] {
-        appearance: none;
-        -webkit-appearance: none;
         align-items: center;
+        appearance: none;
         background-color: var(--branco);
         border: 1.5px solid var(--azul-escuro);
         border-radius: 50%;
@@ -289,6 +298,7 @@
         height: 15px;
         justify-content: center;
         margin: 0;
+        -webkit-appearance: none;
         width: 15px;
     }
 
