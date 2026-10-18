@@ -1,19 +1,28 @@
 // Nav bar com scroll inteligente:
 
-  let ultimoScrollTop = 0
   const navBar = document.getElementById("nav-bar")
+  let ultimoScrollTop = window.pageYOffset || document.documentElement.scrollTop
 
-  window.addEventListener("scroll", function () {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+  if (navBar) {
+    navBar.style.top = "0"
 
-      if (scrollTop > ultimoScrollTop) {
+    window.addEventListener("pageshow", function () {
+      navBar.style.top = "0"
+      ultimoScrollTop = window.pageYOffset || document.documentElement.scrollTop
+    })
+
+    window.addEventListener("scroll", function () {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+
+      if (scrollTop > ultimoScrollTop && scrollTop > navBar.offsetHeight) {
         navBar.style.top = "-40px"
       } else {
         navBar.style.top = "0"
       }
 
-    ultimoScrollTop = scrollTop <= 0 ? 0 : scrollTop
-  })
+      ultimoScrollTop = scrollTop <= 0 ? 0 : scrollTop
+    })
+  }
 
 // Associação entre links da nav bar e seções:
 
