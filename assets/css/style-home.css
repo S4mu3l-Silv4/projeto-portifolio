@@ -250,10 +250,6 @@
         transition: transform 0.3s ease;
     }
 
-    .filtro-projeto[open] summary i {
-        transform: rotate(180deg);
-    }
-
     .opcoes-filtro {
         background-color: var(--cinza-claro);
         border-radius: 0 0 8px 8px;
@@ -265,31 +261,6 @@
         grid-template-columns: repeat(3, max-content);
         padding: 10px;
         width: 100%;
-    }
-
-    .filtro-projeto:nth-of-type(1) .opcoes-filtro,
-    .filtro-projeto:nth-of-type(3) .opcoes-filtro {
-        grid-auto-flow: column;
-        grid-template-columns: repeat(2, max-content);
-        grid-template-rows: repeat(2, auto);
-    }
-
-    .filtro-projeto:nth-of-type(2) .opcoes-filtro {
-        grid-auto-flow: column;
-        grid-template-columns: repeat(2, max-content);
-        grid-template-rows: repeat(3, auto);
-    }
-
-    .filtro-projeto:nth-of-type(2) .opcoes-filtro label:has(input[value="Python"]) {
-        order: 5;
-    }
-
-    .filtro-projeto:nth-of-type(2) .opcoes-filtro label:has(input[value="VBA"]) {
-        order: 4;
-    }
-
-    .filtro-projeto[open] {
-        align-self: flex-start;
     }
 
     .opcoes-filtro label {
@@ -338,12 +309,6 @@
         font-weight: 600;
         padding: 10px 13px;
         transition: ease 0.3s;
-    }
-
-    @media screen and (max-width: 768px) {
-        #limpar-filtros {
-            flex: 1 1 100%;
-        }
     }
 
     #limpar-filtros:hover {
