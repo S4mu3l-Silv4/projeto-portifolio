@@ -251,7 +251,18 @@
     .filtro-projeto summary i {
         font-size: 0.75em;
         margin-left: 15px;
+        transform: rotate(0deg);
         transition: transform 0.3s ease;
+    }
+
+    .filtro-projeto[open] summary i {
+        transform: rotate(180deg);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .filtro-projeto summary i {
+            transition: none;
+        }
     }
 
     .opcoes-filtro {
