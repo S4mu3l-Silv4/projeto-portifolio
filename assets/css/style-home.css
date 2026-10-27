@@ -205,6 +205,15 @@
         #filtros-projetos {
             flex-wrap: wrap;
         }
+
+        #filtros-projetos > .filtro-projeto {
+            max-width: calc(50% - 5px);
+            width: calc(50% - 5px);
+        }
+
+        #filtros-projetos > .filtro-projeto:nth-of-type(3) {
+            margin-inline: auto;
+        }
     }
 
     .filtro-projeto {
@@ -220,15 +229,6 @@
         .filtro-projeto {
             flex: 1 1 calc(50% - 5px);
             min-width: 0;
-        }
-
-        #filtros-projetos > .filtro-projeto {
-            max-width: calc(50% - 5px);
-            width: calc(50% - 5px);
-        }
-
-        #filtros-projetos > .filtro-projeto:nth-of-type(3) {
-            margin-inline: auto;
         }
     }
 
@@ -326,6 +326,16 @@
         margin-top: 4px;
         padding: 10px 13px;
         transition: ease 0.3s;
+    }
+
+    @media screen and (max-width: 768px) {
+        #limpar-filtros {
+            flex: 0 0 auto;
+            margin: 8px auto 0;
+            max-width: 100%;
+            padding: 9px 13px;
+            width: fit-content;
+        }
     }
 
     #limpar-filtros:hover {
