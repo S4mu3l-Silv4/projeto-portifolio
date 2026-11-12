@@ -128,14 +128,46 @@
     })
   }
 
+  function abrirFiltro(filtro) {
+    clearTimeout(filtro.fechamento)
+    filtro.classList.remove('fechando')
+    filtro.open = true
+    requestAnimationFrame(() => {
+      filtro.classList.add('aberto')
+    })
+  }
+
+  function fecharFiltro(filtro) {
+    clearTimeout(filtro.fechamento)
+    if (!filtro.open) return
+    filtro.classList.remove('aberto')
+    filtro.classList.add('fechando')
+    filtro.fechamento = setTimeout(() => {
+      filtro.open = false
+      filtro.classList.remove('fechando')
+    }, 400)
+  }
+
   if (filtrosProjetos) {
     filtrosProjetos.addEventListener('change', atualizarProjetos)
 
+    filtrosProjetos.querySelectorAll('.filtro-projeto').forEach(filtro => {
+      filtro.querySelector('summary').addEventListener('click', evento => {
+        evento.preventDefault()
+        if (filtro.open && filtro.classList.contains('aberto')) {
+          fecharFiltro(filtro)
+        } else {
+          filtrosProjetos.querySelectorAll('.filtro-projeto[open]').forEach(outroFiltro => {
+            if (outroFiltro !== filtro) fecharFiltro(outroFiltro)
+          })
+          abrirFiltro(filtro)
+        }
+      })
+    })
+
     document.addEventListener('click', evento => {
       if (!evento.target.closest('#filtros-projetos .filtro-projeto')) {
-        filtrosProjetos.querySelectorAll('.filtro-projeto[open]').forEach(filtro => {
-          filtro.open = false
-        })
+        filtrosProjetos.querySelectorAll('.filtro-projeto[open]').forEach(fecharFiltro)
       }
     })
   }
@@ -146,9 +178,7 @@
         input.checked = false
       })
 
-      filtrosProjetos.querySelectorAll('details').forEach(filtro => {
-        filtro.open = false
-      })
+      filtrosProjetos.querySelectorAll('details').forEach(fecharFiltro)
 
       atualizarProjetos()
     })

@@ -252,7 +252,7 @@
         font-size: 0.75em;
         margin-left: 15px;
         transform: rotate(0deg);
-        transition: transform 0.3s ease;
+        transition: transform 0.4s ease;
     }
 
     .filtro-projeto[open] summary i {
@@ -274,8 +274,18 @@
         gap: 8px 16px;
         grid-auto-flow: row;
         grid-template-columns: minmax(0, 1fr);
-        padding: 10px;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        padding: 0 10px;
+        transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
         width: 100%;
+    }
+
+    .filtro-projeto.aberto .opcoes-filtro {
+        max-height: 500px;
+        opacity: 1;
+        padding: 10px;
     }
 
     .opcoes-filtro label {
