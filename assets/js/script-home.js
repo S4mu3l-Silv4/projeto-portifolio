@@ -157,9 +157,6 @@
         if (filtro.open && filtro.classList.contains('aberto')) {
           fecharFiltro(filtro)
         } else {
-          filtrosProjetos.querySelectorAll('.filtro-projeto[open]').forEach(outroFiltro => {
-            if (outroFiltro !== filtro) fecharFiltro(outroFiltro)
-          })
           abrirFiltro(filtro)
         }
       })
